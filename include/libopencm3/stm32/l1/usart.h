@@ -6,7 +6,7 @@
 
 @version 1.0.0
 
-@date 5 December 2012
+@date 12 November 2020
 
 LGPL License Terms @ref lgpl_license
  */
@@ -31,7 +31,22 @@ LGPL License Terms @ref lgpl_license
 #ifndef LIBOPENCM3_USART_H
 #define LIBOPENCM3_USART_H
 
-#include <libopencm3/stm32/common/usart_common_f124.h>
+#include <libopencm3/stm32/common/usart_common_all.h>
+#include <libopencm3/stm32/common/usart_common_v2.h>
+
+/** @defgroup usart_reg_base USART register base addresses
+ * Holds all the U(S)ART peripherals supported.
+ * @{
+ */
+#define USART1				USART1_BASE
+#define USART2				USART2_BASE
+#define USART3				USART3_BASE
+#define UART4				  UART4_BASE
+#define UART5				  UART5_BASE
+/**@}*/
+
+BEGIN_DECLS
+
+END_DECLS
 
 #endif
-
